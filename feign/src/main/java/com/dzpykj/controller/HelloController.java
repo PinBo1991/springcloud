@@ -15,6 +15,6 @@ public class HelloController {
 	
 	@RequestMapping("/hello/{name}")
 	public String hello(@PathVariable String name) {
-		return helloInterface.hello(name);
+		return helloInterface.hello(name+"(feign)");
 	}
 }
